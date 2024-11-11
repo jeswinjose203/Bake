@@ -2,7 +2,7 @@ import './App.css';
 import { Layout, Menu, theme } from "antd";
 import ReactDOM from "react-dom/client";
 import React from "react";
- 
+import MainContent from "./MainContent.js";
 const { Sider } = Layout;
 const { SubMenu } = Menu; // Import SubMenu from Menu
  
@@ -38,6 +38,7 @@ const Side = () => {
           <Menu.Item key="7">Contact</Menu.Item>
         </Menu>
       </Sider>
+      <MainContent/>
     </Layout>
   );
 };

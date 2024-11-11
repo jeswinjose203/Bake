@@ -2,7 +2,7 @@ import './App.css';
 import { Layout } from "antd";
 import Top from "./Top.js";
 import Side from "./Side.js";
-import MainContent from "./MainContent.js";
+
 const {Footer} = Layout;
 
 function App() {
@@ -12,7 +12,6 @@ function App() {
       <Top/>
         <Layout>
           <Side/>
-          <MainContent/>
         </Layout>
       <Footer>footer</Footer>
     </Layout>
