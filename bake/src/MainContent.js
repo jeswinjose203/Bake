@@ -4,7 +4,7 @@ const { Content } = Layout;
 
 function MainContent() {
   return (
-          <Content>Left Sider</Content>
+          <Content>Main Content</Content>
   );
 }
 
