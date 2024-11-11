@@ -4,9 +4,9 @@ import { Card, Row, Col, Container } from "react-bootstrap";
  
 const { Content } = Layout;
  
-function MainContent() {
+function Home() {
     const playerData = [
-        { "name": "John", "team_name": "Doe" },
+        { "name": "John", "team_name": "Doe"},
         { "name": "Anna", "team_name": "Smith" },
         { "name": "Peter", "team_name": "Jones" },
         { "name": "Peter", "team_name": "Jones" },
@@ -41,6 +41,5 @@ function MainContent() {
     );
 }
  
-export default MainContent;
- 
+export default Home;
  
