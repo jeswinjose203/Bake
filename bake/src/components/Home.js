@@ -1,7 +1,7 @@
-function Contact() {
+function Home() {
     return (
-      <h1>HOME</h1>
+      <h1>Home</h1>
     );
   }
   
-  export default Contact;
+  export default Home;
