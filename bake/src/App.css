@@ -1,24 +1,33 @@
-html, body, #root, .App {
-  height: 100%; /* Ensures the entire viewport height is used */
-  margin: 0;   /* Removes default browser margins */
+/* Ensure the whole page takes up 100% of the viewport height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
+/* Main container to use flexbox for layout */
 .App {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Stack items vertically */
+  min-height: 100vh; /* Ensure the layout spans the full height of the viewport */
+  text-align: center;
 }
 
+/* Layout for Ant Design */
 .ant-layout {
   display: flex;
-  flex-direction: column;
-  flex: 1; /* Makes the layout fill the available space */
+  flex-direction: column; /* Ensure proper stacking of header, content, and footer */
+  flex: 1; /* Allow the layout to grow and push the footer */
 }
 
+/* Push footer to the bottom by making content take available space */
 .ant-layout-content {
-  flex: 1; /* Allows the content to take up the remaining space */
-  padding: 24px; /* Adjust padding as needed */
+  flex: 1; /* Ensures content pushes the footer */
 }
 
-.ant-layout-footer {
-  text-align: center;
+/* Footer styling */
+footer {
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 16px; /* Add some padding for spacing */
+  text-align: center; /* Align text to the center */
 }
