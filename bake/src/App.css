@@ -1,4 +1,24 @@
-.App {
-  text-align: center;
+html, body, #root, .App {
+  height: 100%; /* Ensures the entire viewport height is used */
+  margin: 0;   /* Removes default browser margins */
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.ant-layout {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Makes the layout fill the available space */
+}
+
+.ant-layout-content {
+  flex: 1; /* Allows the content to take up the remaining space */
+  padding: 24px; /* Adjust padding as needed */
+}
+
+.ant-layout-footer {
+  text-align: center;
+}
