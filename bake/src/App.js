@@ -16,22 +16,22 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Layout>
-          <Top />
-          <Layout>
-            <Side />
-            <Layout style={{ padding: '24px' }}>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/cake" element={<Cake />} />
-                <Route path="/pastries" element={<Pastries />} />
-                <Route path="/contact" element={<Contact />} />
-                {/* <Route path="/maincontent" element={<MainContent />} /> */}
-              </Routes>
-            </Layout>
-          </Layout>
-          <Footer>footer</Footer>
-        </Layout>
+      <Layout className="ant-layout">
+  <Top />
+  <Layout className="ant-layout-content">
+    <Side />
+    <Layout style={{ padding: '24px' }}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/cake" element={<Cake />} />
+        <Route path="/pastries" element={<Pastries />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Layout>
+  </Layout>
+  <Footer>footer</Footer>
+</Layout>
+
       </Router>
     </div>
   );
